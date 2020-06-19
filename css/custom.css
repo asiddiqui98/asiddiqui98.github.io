@@ -1,0 +1,517 @@
+
+.navbar-brand{
+	font-family:'Arvo', serif;
+	font-size: 30px;
+	font-weight: bold;
+	color:black;
+	margin-left: 4em;
+	position: relative;
+	display: inline-block;
+	float: left;
+	
+}
+
+.navbar .navbar-expand-sm .navbar-brand{
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.navbar-brand:hover {
+    color: #BB7815;
+}
+
+.nav-link{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline #BB7815;
+	float: right;
+
+}
+
+.nav-link:hover{
+		color:#BB7815;
+}
+
+.navbar-nav{
+	float: right;
+	font-family: 'Arvo', serif;
+	font-weight: 900;
+	display: flex;
+	position: relative;
+	margin-right: 12em;
+	justify-content: space-around;
+
+}
+
+.navbar-inverse {
+	background-color: white;
+	border: none;
+}
+
+.dropdown-menu{
+	font-family: 'Arvo', serif;
+}
+
+.dropdown-menu .dropdown-item{
+	font-size: 15px;
+}
+.dropdown-menu .dropdown-item:hover{
+	background-color: #BB7815;
+}
+
+/* home page styling */
+.carousel-inner img {
+       width: 100%;
+      height: 600px;
+  }
+
+.carousel{
+	margin: 0;
+	padding: 0;
+	margin-top: -5px;
+}
+
+.media-body{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Arvo', serif;
+}
+
+.media-body .media-heading{
+	font-size: 50px;
+	text-align: center;
+	border-top: medium solid #BB7815;
+	border-bottom: medium solid #BB7815;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+bottom: 50%;
+	margin-bottom: 10%;
+  border-bottom: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+  background-color: transparent;
+  color: #FFF;
+font-family: 'Arvo', serif;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+margin-top: 30px;
+
+}
+
+.hovereffect a{
+  color: #FFF;
+	justify-content: center;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+		text-decoration: none;
+}
+
+.hovereffect:hover a, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.caption p{
+	font-size: 15px;
+	font-family: 'Arvo', serif;
+	text-align: center;
+}
+
+/* Resume Page Styling */
+
+.resume{
+	font-family: 'Arvo', serif;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 10px;
+}
+
+.resume-heading h2 {
+	text-decoration: underline #249B97;
+}
+
+.resume h2{
+	font-size: 20px;
+	
+}
+
+
+.resume th{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+td{
+	border-bottom: thin #C1BDBC solid;
+}
+.progress{
+	margin: 5px;
+}
+
+body #technical-skills{
+	background-color: #F3CF9A;
+	
+}
+body .volunteer{
+	background-color: #F3CF9A;
+	width: 100%;
+	  
+}
+
+.progress-bar{
+	background-color: #249B97 ;
+	
+}
+
+.progress{
+	width: 30em;
+	height: 10px;
+}
+/* about page styling*/
+
+.likes-dislikes{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 16px;
+}
+
+.likes-dislikes h2{
+	font-family: 'Arvo', serif;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: underline #249B97;
+}
+
+.like-list{
+	line-height: 35px;
+}
+
+.believe h4{
+	font-weight: bold;
+}
+
+.believe p{
+	font-size: 15px;
+}
+
+.my-image{
+padding-left: 22em;
+}
+/* photo gallery styling */ 
+
+.blurred-caption{
+	
+	display: inline-block;
+	position: relative;
+	font-family: 'Slabo 27px', serif;
+
+}
+
+.blurred-caption img{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+.blurred-caption:hover img{
+	filter: blur(2px) brightness(60%);
+	box-shadow: 0 0 16px cyan;
+	
+}
+.blurred-caption :not(img){
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+	transition: .3s;
+	
+}
+
+.blurred-caption h3{
+	top: 50%;
+}
+
+.blurred-caption:hover :not(img){
+	opacity: 1;
+		
+}
+
+.explnation{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Arvo', serif;
+
+}
+
+.explnation .photo-heading{
+	font-size: 50px;
+	text-align: center;
+	border-top: medium solid #BB7815;
+	border-bottom: medium solid #BB7815;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay .effect{
+ opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+/* contact page styling */
+
+.questions h2{
+	font-weight: bold;
+}
+.questions{
+	font-family: 'Arvo', serif;
+}
+
+.form-control{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #CFCFCF;
+  border-radius: 4px;
+ background-color: #E1E1E1;
+}
+
+.form-control:focus{
+	background-color: white;
+}
+
+.form-group{
+	font-size: 13px;
+}
+
+.math{
+	font-size: 12px;
+	
+}
+
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+	font-family: 'Arvo', serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 40%;
+}
+
+.container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark {
+    background-color: #BB7815;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-radio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: pink;
+}
+
+
+.button{
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 7px 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: #BB7815; 
+  color: white;
+}
+footer{
+	background-color:#F4F4F4;
+	padding-top: 15px;
+}
+.footer-navbar .footer-item{
+	color: black;
+	font-size: 15px;
+	margin: 50px;
+	font-family: 'Arvo', serif;
+}
+.footer-navbar .footer-item:hover{
+	color: #BB7815;
+}
+
+.bottom-part .bottom-item{
+	color: black;
+	font-size: 11px;
+	margin: 30px;
+}
+
+.fa {
+  padding: 25px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin:  20px;
+  border-radius: 100%;
+	line-height: 5px;
+	
+}
+
+.fa:hover {
+    color:#BB7815;
+	text-decoration: none;
+}
+
+.fa-facebook {
+  color: black;
+  font-weight: bold;
+
+		
+	
+}
+
+.fa-twitter {
+
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.fa-linkedin {
+
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.fa-instagram {
+
+  color: black;
+  font-weight: bold;
+}
+.icons{
+	text-align: center;
+	display: inline-block;
+
+}

@@ -1,0 +1,619 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+
+}
+body {
+  height: 50vh;
+	width: 100%;
+	background-color: #7D9EAA;
+}
+
+
+
+/* moving text styling */
+#logo{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fill 0.5s ease forwards 4s;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	
+}
+
+#ayesha{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+		transform: translate(-50%, -50%);
+		
+			animation: fill 0.5s ease forwards 4s;
+}
+
+#logo path:nth-child(1){
+	stroke-dasharray: 1069px;
+	stroke-dashoffset: 1069px;
+	animation: line-anim 3.5s ease forwards;
+}
+
+#logo path:nth-child(2){
+	stroke-dasharray: 1030px;
+	stroke-dashoffset: 1030px;
+	animation: line-anim 3.5s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3){
+	stroke-dasharray: 478px;
+	stroke-dashoffset: 478px;
+	animation: line-anim 3.5s ease forwards 0.6s;
+}
+
+	@keyframes line-anim {
+		to {
+	stroke-dashoffset: 0;
+	}
+	}
+
+	@keyframes fill{
+		from{
+			fill: transparent;
+		}
+		to{
+			fill: white;
+		}
+	}
+
+#ayesha path:nth-child(1){
+	stroke-dasharray: 315.2px;
+	stroke-dashoffset: 315.2;
+	animation: line-anim 2s ease forwards;
+}
+#ayesha path:nth-child(2){
+	stroke-dasharray: 129.2px;
+	stroke-dashoffset: 129.2px;
+	animation: line-anim 2s ease forwards 0.3s;
+}
+#ayesha path:nth-child(3){
+	stroke-dasharray: 928.8px;
+	stroke-dashoffset: 928.8px;
+	animation: line-anim 2s ease forwards 0.6s;
+}
+#ayesha path:nth-child(4){
+	stroke-dasharray: 680.9px;
+	stroke-dashoffset: 680.9px;
+	animation: line-anim 2s ease forwards 0.9s;
+}
+#ayesha path:nth-child(5){
+	stroke-dasharray: 596.4px;
+	stroke-dashoffset: 596.4px;
+	animation: line-anim 2s ease forwards 1.2s;
+}
+#ayesha path:nth-child(6){
+	stroke-dasharray: 715.6px;
+	stroke-dashoffset: 715.6px;
+	animation: line-anim 2s ease forwards 1.5s;
+}
+#ayesha path:nth-child(7){
+	stroke-dasharray: 581.6px;
+	stroke-dashoffset: 581.6px;
+	animation: line-anim 2s ease forwards 1.8s;
+}
+
+#ayesha path:nth-child(8){
+	stroke-dasharray: 663.5px;
+	stroke-dashoffset: 663.5px;
+	animation: line-anim 2s ease forwards 2.1s;
+}
+
+#ayesha path:nth-child(9){
+	stroke-dasharray: 703.3px;
+	stroke-dashoffset: 703.3px;
+	animation: line-anim 2s ease forwards 2.4s;
+}
+
+#ayesha path:nth-child(10){
+	stroke-dasharray: 77.4px;
+	stroke-dashoffset: 77.4px;
+	animation: line-anim 2s ease forwards 2.7s;
+}
+
+	@keyframes line-anim {
+		to {
+	stroke-dashoffset: 0;
+	}
+	}
+
+	@keyframes fill{
+		from{
+			fill: transparent;
+		}
+		to{
+			fill: white;
+		}
+	}
+
+.moving-text{
+	height: 100vh;
+	background: #7D9EAA;
+	
+}
+
+
+
+.about-section{
+	height: 70vh;
+	background:  #A499B3;
+	box-sizing: border-box;
+}
+	
+
+#name{
+	float: left;
+	text-decoration: none !important;
+	font-family: 'Baloo Bhaina 2', cursive;
+	color: #fff !important;
+	background-color: #7D9EAA;
+}
+
+#name a:hover{
+	color: #B7918C !important;
+	text-decoration: none;
+}
+
+#name a:visited{
+	text-decoration: none;
+}
+
+
+header{
+
+	font-size: 25px;
+	background-color: #7D9EAA;
+	
+
+}
+.topnav{
+	overflow: hidden;
+	font-family: 'Baloo Bhaina 2', cursive;
+	text-align: right;
+	background-color: #7D9EAA;
+	color: white !important;
+	font-size: 45px;
+}
+
+.topnav a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 21px;
+}
+
+.topnav a:hover{
+	color: #B7918C !important;
+	text-decoration: none;
+}
+
+.topnav a.active{
+	color: #7293A0;
+}
+
+
+
+.intro{
+	font-family: 'Baloo Bhaina 2', cursive;
+	color: white;
+	text-align: center;
+	background-color: #7D9EAA;
+	margin-top: 60vh;
+	box-sizing: border-box;
+	animation-duration: 4.5s;
+	animation-name: appear;
+}
+
+@keyframes appear{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
+
+.about{
+	font-family: 'Baloo Bhaina 2', cursive;
+	color: #171736;
+	text-align: center;
+	margin-top: 0;
+
+
+}
+
+.about-title{
+	font-size: 50px;
+	color: white;
+	
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.flip-card {
+  background-color: transparent;
+  border-radius: 50%;
+  perspective: 1000px;
+margin: 20px 20px 10px 100px;
+
+	
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+    border-radius: 50%;
+
+}
+.flip-card-back {
+  background-color: #7D9EAA;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+   
+}
+
+.flip-card-back h1{
+	text-align: left;
+}
+
+.list{
+	text-align: left;
+	margin-left: 30px;
+	  border-radius: 50%;
+
+}
+
+/* project page styling */
+.project-intro{
+	font-family: 'Baloo Bhaina 2', cursive;
+	color: black;
+	text-align: center;
+	background-color: white;
+}
+
+.experiences{
+	padding-top: 80px;
+	align-items: center;
+	margin-right: 30px;
+}
+
+/* work-experience page styling */
+
+#work-experience{
+		font-family: 'Baloo Bhaina 2', cursive;
+	}
+
+#work-experience h1{
+	font-family: 'Baloo Bhaina 2', cursive;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	text-decoration: underline;
+}
+#work-experience section h3{
+	text-align: center;
+	font-size: 30px;
+}
+
+/* product development */
+
+#plushies{
+	background-color: #7D9EAA;
+	color: white;
+	height: 100vh;
+	background-color: #7D9EAA;
+}
+
+#pd-desc{
+	float: right;
+	padding-top: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#pd-my-role{
+	text-align: center;
+  box-sizing: border-box;
+  width: 45em;
+  height: 16em;
+  padding: 30px;  
+  border: 5px solid white;
+  background-color: #171736;
+
+
+}
+ #plushies h4{
+ 	text-align: center;
+ 	text-decoration: bold;
+ 	margin-top: 55px;
+ 	padding-top: 45vh;
+ 	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 20px;
+ }
+
+ #plushies p{
+ 	text-align: justify;
+ 	margin-top: 0;
+ 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 15px;
+	padding-right: 50px;
+ }
+
+/* reasearch */
+#research{
+	background-color: #A499B3;
+	color: white;
+	height: 100vh;
+}
+
+ #research h4{
+ 	text-align: center;
+ 	text-decoration: bold;
+ 	padding-top: 40vh;
+ 	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 20px;
+ }
+
+ #research p{
+ 	text-align: justify;
+ 	margin-top: 0;
+ 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 15px;
+	padding-right: 50px;
+ }
+#research-desc{
+	float: right;
+	padding-top: 30px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#research-my-role{
+		text-align: center;
+  box-sizing: border-box;
+  width: 45em;
+  height: 11em;
+  padding: 30px;  
+  border: 5px solid white;
+  background-color: #171736;
+}
+
+/* o-week */
+#o-week{
+background-color: #B7918C;
+	color: white;
+		height: 100vh;
+}
+
+ #o-week h4{
+ 	text-align: center;
+ 	text-decoration: bold;
+ 	padding-top: 8vh;
+ 	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 20px;
+ }
+
+ #o-week p{
+ 	text-align: justify;
+ 	margin-top: 0;
+ 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 15px;
+	padding-right: 50px;
+ }
+
+#oweek-my-role{
+		text-align: center;
+  box-sizing: border-box;
+  width: 45em;
+  height: 19em;
+  padding: 30px;  
+  border: 5px solid white;
+  background-color: #171736;
+}
+
+/* winter welcome */
+
+#winterw{
+background-color: #fff;
+	color: black;
+		height: 100vh;
+}
+
+ #winterw h4{
+ 	text-align: center;
+ 	text-decoration: bold;
+ 	padding-top: 8vh;
+ 	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 20px;
+ }
+
+ #winterw p{
+ 	text-align: justify;
+ 	margin-top: 0;
+ 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 15px;
+	padding-right: 50px;
+ }
+
+#winterw-my-role{
+		text-align: center;
+  box-sizing: border-box;
+  width: 45em;
+  height: 15em;
+  padding: 30px;  
+  border: 5px solid white;
+  background-color: #171736;
+  color: white;
+}
+
+/* awards night */
+
+#awards{
+background-color: #7D9EAA;
+	color: white;
+		height: 100vh;
+}
+
+
+ #awards h4{
+ 	text-align: center;
+ 	text-decoration: bold;
+ 	padding-top: 8vh;
+ 	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 20px;
+ }
+
+ #awards p{
+ 	text-align: justify;
+ 	margin-top: 0;
+ 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 15px;
+	padding-right: 50px;
+ }
+
+#awards-my-role{
+		text-align: center;
+  box-sizing: border-box;
+  width: 45em;
+  height: 15em;
+  padding: 30px;  
+  border: 5px solid white;
+  background-color: #171736;
+}
+
+/* popeyes */
+#popeyes{
+	background-color: #A499B3;
+	color: white;
+		height: 100vh;
+}
+
+ #popeyes h4{
+ 	text-align: center;
+ 	text-decoration: bold;
+  	padding-top: 8vh;
+ 	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 20px;
+ }
+
+ #popeyes p{
+ 	text-align: justify;
+ 	margin-top: 0;
+ 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	font-size: 15px;
+	padding-right: 50px;
+ }
+
+#popeyes-my-role{
+	text-align: center !important;
+  box-sizing: border-box;
+  width: 45em;
+  height: 13em;
+  padding: 30px;  
+  border: 5px solid white;
+  background-color: #171736;
+  width: 95%;
+}
+
+#popeyes-my-role p{
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
